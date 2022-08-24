@@ -1,0 +1,30 @@
+.loginContainer {
+    width: 327px;
+    height: 53px;
+    margin: auto;
+    background: #FFFFFF;
+    outline: 2px solid #656363;
+    object-position: center;
+}
+
+.loginContainer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5;
+
+    font-family:'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #656363;
+}
+
+.loginButton {
+    width: 327px;
+    height: 53px;
+    margin: auto;
+    background: #FFFFFF;
+    outline: 2px solid #656363;
+    object-position: center;
+}

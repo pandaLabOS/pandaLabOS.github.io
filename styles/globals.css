@@ -1,0 +1,18 @@
+body {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    top: 0px;
+}
+

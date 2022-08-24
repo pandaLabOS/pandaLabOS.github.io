@@ -1,0 +1,130 @@
+.nav {
+    margin: 10px auto 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    /*background-color: #FFFFFF;*/
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 77px;
+}
+
+.a {
+    margin-left: 12px;
+    color: #000000;
+}
+
+.logo {
+    margin-right: auto;
+    left: 20px;
+    bottom: 23px;
+
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+
+    height: 77px;
+    top: 0px;
+}
+
+.logo h1 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    letter-spacing: 0.25px;
+
+    padding: 4px;
+    
+    color: #000000;
+}
+
+.buttons {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 0.25px;
+
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    height: 77px;
+    top: 0px;
+}
+
+.buttonText_selected {
+    font-weight: 600;
+    color: #D73938;
+    margin: 14px 10px;
+}
+
+.buttonText_default {
+    font-weight: 400;
+    color: #979797;
+    margin: 14px 10px;
+}
+
+.profile {
+    width: 200px;
+    height: 77px;
+    top: 0px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25px;
+}
+
+.profile h1{ /*In circle*/
+    box-sizing: border-box;
+    border-radius: 50%;
+
+    width: 65px;
+    height: 65px;
+    
+    background: #FFFFFF;
+    border: 1px solid #808080;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.25px;
+
+    color: #D73938;
+}
+
+.profile h2 { /*Full n/ame*/
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25px;
+    
+    /* Unselected Text */
+    
+    color: #808080;
+}
