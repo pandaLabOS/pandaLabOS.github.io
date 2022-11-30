@@ -1,8 +1,7 @@
 img {
   border-radius: 15px;
   border: 2px solid white;
-  width: 50%;
-  height: 40%;
+  height: 300px;
 }
 
 body {
@@ -15,7 +14,8 @@ body {
 
 portraitSection {
   width: 50%;
-  background-image: url("../SFO_night.png");
+  height: 100%;
+  background-color: #223447;
   padding: 3.25%;
   text-align: center;
   color: white;
@@ -23,7 +23,6 @@ portraitSection {
 
 infoSection {
   width: 50%;
-  height: 100%;
   background-color: #f8eaeb;
   background-image: url();
   padding: 3.25%;
@@ -31,7 +30,7 @@ infoSection {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
   font-family: Simplifica;
   src: url("../Desktop/SIMPLIFICA Typeface.ttf") format('truetype');
