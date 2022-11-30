@@ -1,8 +1,8 @@
 img {
   border-radius: 15px;
   border: 2px solid white;
-  width: 65%;
-  height: 25%;
+  width: 425px;
+  height: 275px;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 portraitSection {
   width: 50%;
-  background-image: url('../SFO_night.png');
+  background-image: url("/SFO_night.png");
   padding: 3.25%;
   text-align: center;
   color: white;
@@ -46,6 +46,13 @@ h2 {
 }
 
 p {
+  font-size: 0.9rem;
+  font-weight: 100;
+  font-family: Nunito;
+  src: url("../Desktop/Nunito-VariableFont_wght.ttf") format('truetype');
+}
+
+li {
   font-size: 0.9rem;
   font-weight: 100;
   font-family: Nunito;
