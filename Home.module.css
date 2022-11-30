@@ -1,7 +1,7 @@
 img {
   border-radius: 15px;
   border: 2px solid white;
-  width: 75%;
+  width: 65%;
   height: 25%;
 }
 
@@ -11,24 +11,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #223447;
   background-color: #D3CEDF;
-  gap: 10px;
 }
 
 portraitSection {
   width: 50%;
-  height: 75%;
-  background-color: #9CB4CC;
+  background-image: url('../SFO_night.png');
   padding: 3.25%;
-  border-radius: 10px;
   text-align: center;
+  color: white;
 }
 
 infoSection {
   width: 50%;
+  height: 100%;
   background-color: #f8eaeb;
   background-image: url();
   padding: 3.25%;
-  border-radius: 10px;
   color: #855750 !important;
 }
 
