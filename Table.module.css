@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    text-align: center;
+}
+
+.tableSection {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url("public/snowflake_transparent.png");
+    background-color: rgb(227, 78, 59);
+    width: 100%;
+}
+
+h1 {
+    font-family: Nunito;
+    src: url("../Desktop/Nunito-VariableFont_wght.ttf") format('truetype');
+    font-weight: 350;
+    text-transform: uppercase;
+    color:rgb(107, 31, 21);
+    width: 300px;
+    height: 42px;
+    margin: auto;
+}
+
+h2 {
+    font-family: Nunito;
+    font-style: italic;
+    src: url("../Desktop/Nunito-VariableFont_wght.ttf") format('truetype');
+    font-weight: 200;
+    color:rgb(26, 79, 46);
+}
+
+.description {
+    text-align: center;
+}
+
+.christmasBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.product_table {
+    border: 1px solid black;
+    border-spacing: 0;
+    background-color: aliceblue;
+}
+
+.product_table th {
+    background-color: rgb(107, 31, 21);
+    color: white;
+    text-transform: uppercase;
+}
+
+.center {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right; 
+}
+
+.product_table tbody td {
+    border-left: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    padding: 10px;
+}
+
+.product_table tfoot {
+    background-color: rgb(26, 79, 46);
+    color: white;
+}
+
+footer {
+    bottom: 10px;
+    position: fixed;
+    width: 100%;
+}
