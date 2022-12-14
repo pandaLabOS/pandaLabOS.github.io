@@ -45,16 +45,16 @@ function addToSack() {
 
 function deletePresent(index) {
     console.log("DELETE",index)
-    delete products[index]
-    $('#productBody').html("")
-    loadData()
+    delete christmasSack[index]
+    $('#presentsBody').html("")
+    loadPresents()
 }
 
 function loadPresents() {
     let allRows = ""
     let gross = 0
     for (let p in christmasSack) {
-        let cellName = `<td class="text-left"><img class='icon' src='public/remove.png' width = '15px' onclick='deleteProduct("${p}")'> ` + christmasSack[p].name + "</td>"
+        let cellName = `<td class="text-left"><img class='icon' src='public/remove.png' width = '15px' onclick='deletePresent("${p}")'> ` + christmasSack[p].name + "</td>"
         let cellQuantity = '<td class="text-right">' + christmasSack[p].quantity + "</td>"
         let cellPPU = '<td class="text-right">' + christmasSack[p].value + "</td>"
         let total = christmasSack[p].value * christmasSack[p].quantity
