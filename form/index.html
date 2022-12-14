@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="Form.module.css" /> 
+        <title>Donation Form</title>
+    </head>
+    <body>
+            <h1>Schedule Donations in Advance</h1>
+
+            <div class = "direction-row">
+                <div>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+
+                <div>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br> 
+                </div> 
+            </div>
+            
+            <div class = "direction-row">
+                <div>
+                    <label for="dob">Date of First Donation:</label><br>
+                    <input type="date" id="dof" name="dof"><br>
+                </div>
+
+                <div>
+                    <label for="tob">Time of Donation:</label><br>
+                    <input type="time" id="tod" name="tod"><br>
+                </div>
+            </div>
+
+            <div>
+                <label for="amount">Donation Amount:</label><br>
+                <input type="number" id="amount" name="amount"><br>
+            </div>
+
+            <label for="occurence">Occurence:</label><br>
+            <input type="radio" id="single" name="occurence" style="height:15px; width:15px; vertical-align: middle;">Once<br>
+            <input type="radio" id="weekly" name="occurence" style="height:15px; width:15px; vertical-align: middle;">Weekly<br>
+            <input type="radio" id="monthly" name="occurence" style="height:15px; width:15px; vertical-align: middle;">Monthly<br>
+            <input type="radio" id="annually" name="occurence" style="height:15px; width:15px; vertical-align: middle;">Annually<br>
+            <div style="height: 15px;"></div>
+
+            <label for="organization">Organizations:</label><br>
+            <input type="checkbox" id="a21_campaign" name="organization" style="height:20px; width:20px; vertical-align: middle;">A21 Campaign<br>
+            <input type="checkbox" id="hoh" name="organization" style="height:20px; width:20px; vertical-align: middle;">Hand of Hope<br>
+            <input type="checkbox" id="projectgrl" name="organization" style="height:20px; width:20px; vertical-align: middle;"> PROJECTGRL<br>
+            <input type="checkbox" id="wfp" name="organization" style="height:20px; width:20px; vertical-align: middle;"> World Food Programme<br>
+
+            <h2>Occupation</h2>
+            <select id="anonymity">
+                <option value="Anonymous">Anonymous</option>
+                <option value="First name only">First name only</option>
+                <option value="Last name only">Last name only</option>
+                <option value="Full name">Full name</option>
+                <option value="Country of origin only">Country of origin only</option>
+            </select>
+            <br>
+            <button onclick="handleForm()">Handle Form</button>
+
+            <p>
+                <span id="fullname"></span>
+            </p>
+
+          <script>
+            function handleForm() {
+                let elFirstName = document.getElementById("fname")
+                let elLastName = document.getElementById("lname")
+                let elDof = document.getElementById("dof")
+                let elTod = document.getElementById("tod")
+
+                let elSalary = document.getElementById("amount")
+
+                let elSingle = document.getElementById("single")
+                let elWeekly = document.getElementById("weekly")
+                let elMonthly = document.getElementById("monthly")
+                let elAnnually = document.getElementById("annually")
+
+                let elOrganization = document.getElementsByName("organization")
+                let elAnonymity = document.getElementById("anonymity")
+
+                let firstName = elFirstName.value
+                let lastName = elLastName.value
+                let fullName = firstName+" "+lastName
+
+                console.log(fullName)
+                console.log(elDof.value)
+                console.log(elTod.value)
+                console.log(elSalary.value)
+
+                console.log("Single",elSingle.checked)
+                console.log("Weekly",elWeekly.checked)
+                console.log("Monthly",elMonthly.checked)
+                console.log("Annually",elAnnually.checked)
+
+                console.log(elOrganization)
+                console.log(elAnonymity.value)
+
+                let elFullName = document.getElementById("fullname")
+                elFullName.innerHTML = fullName
+            }
+          </script>
+    </body>
+</html>

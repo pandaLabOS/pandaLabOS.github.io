@@ -21,6 +21,7 @@ h1 {
     width: 300px;
     height: 42px;
     margin: auto;
+    margin-bottom: 1.25rem;
 }
 
 h2 {
@@ -69,6 +70,10 @@ h2 {
     text-align: right; 
 }
 
+.text-left {
+    text-align: left; 
+}
+
 .product_table tbody td {
     border-left: 1px solid #555555;
     border-bottom: 1px solid #555555;
@@ -84,4 +89,60 @@ footer {
     bottom: 10px;
     position: fixed;
     width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    line-height: 15px;
+    color: rgb(227, 78, 59);
+}
+
+select {
+    background-color: rgb(227, 78, 59);
+    border: rgb(26, 79, 46) 2px dashed;
+    border-radius: 5px;
+    width: 10rem;
+    height: 50px;
+    margin-bottom: 1rem;
+
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+input {
+    background-color: rgb(227, 78, 59);
+    border: rgb(26, 79, 46) 2px dashed;
+    border-radius: 5px;
+    width: 5rem;
+    height: 50px;
+    margin-bottom: 1rem;
+
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+::placeholder {
+    color: white;
+}
+
+.addButton {
+    background-color: rgb(227, 78, 59);
+    border: rgb(26, 79, 46) 2px dashed;
+    border-radius: 5px;
+    width: 4rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nameTag {
+    width: 20rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.5rem;
 }
