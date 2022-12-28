@@ -24,7 +24,7 @@ var christmasSack = [
 function addToSack() {
 
     let newGift = {
-        name: $('#christmasSack').val(),
+        name: $('#christmasSack').val(), //$('#<id of element you are fetching data from>)
         quantity: $('#quantity').val(),
         value: $('#value').val()
     }
