@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="midterm-product-page.module.css" /> 
+    </head>
+    
+    <body onload="loadProducts()">
+        <div class = "header">
+            <h1>Cart</h1>
+        </div>
+        
+        <div class = "row">
+            <div class = "tableSection"> <!--Goes side-by-side with the product selection-->
+                <table
+                    id = "productList"
+                    class = "product_table center"
+                >
+                    <thead style = "background-color: #FFFFFF;">
+                        <th style="width: 5%; border-top-left-radius: 5px;"></th>
+                        <th style="width: 25%">Product Name</th>
+                        <th style="width: 15%">Quantity</th>
+                        <th style="width: 15%">Unit Price</th>
+                        <th style="width: 15%">Discount</th>
+                        <th style="width: 25%; border-top-right-radius: 5px;">Total</th>
+                    </thead>
+
+                    <tbody id = "tableBody">
+                        <!--Data will be displayed by fetching from 'midterm-product-page.js' file-->
+                    </tbody>
+
+                    <tfoot>
+                        <tr class = "text-right l-border r-border">
+                            <td colspan="4" class="text-right" style = "border-top: 0.5px #FFFFFF solid;">Total Discount</td>
+                            <td><span id="totalDiscount"></span></td>
+                            <td></td>
+                        </tr>
+                        <tr class = "l-border r-border">
+                            <td colspan="4" class="text-right">Total Amount (after discount)</td>
+                            <td></td>
+                            <td class="text-right"><span id="gross"></span></td>
+                        </tr>
+                        <tr class = "l-border r-border b-border">
+                            <td colspan="4" class="text-right">Vat (7%)</td>
+                            <td></td>
+                            <td class="text-right">
+                                <span id="vat"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan = "4" class = "text-right" style = "border-bottom-left-radius: 5px; background-color: #FFFFFF; color: #DF6C4F;">
+                                Net Amount
+                            </td>
+                            <td style = "background-color: #FFFFFF;"></td>
+                            <td class = "text-right" style = "border-bottom-right-radius: 5px; background-color: #FFFFFF; color: #DF6C4F;">
+                                <span id="net"></span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div style = "width: 85%; margin: auto;">
+                    <button id = 'clearbtn' style = 'margin-top: 0.5em;'type='button' onclick = "clearCart()">Clear</button>
+                </div>
+            </div>
+            <div class = "inputSection" id = "inputSection"> <!--Vertical product menu-->
+                <form onsubmit="addToCart(); return false">
+                    <h2>Add product to cart</h2>
+                    <select id = "productSelection">
+                        <option value = "Product A">Product A</option>
+                        <option value = "Product B">Product B</option>
+                        <option value = "Product C">Product C</option>
+                        <option value = "Product D">Product D</option>
+                        <option value = "Product E">Product E</option>
+                        <option value = "Product F">Product F</option>
+                    </select>
+                    <input type = "number" id = "quantity" placeholder = "  Quantity" min="1" required/>
+
+                    <input type = "number" id = "value" placeholder = "  Value" min="1" required/>
+
+                    <input type = "number" id = "discount" placeholder = "  Discount" min="0"/>
+                    <input class = "submitBtn" type="submit" title = "Add"/>
+                </form>
+            </div>
+            
+            
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="midterm-product-page.js"></script>
+    </body>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/cancel" title="cancel icons">Cancel icons created by Freepik - Flaticon</a>
+    </footer>
+</html>
