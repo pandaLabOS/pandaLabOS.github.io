@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Table.module.css" /> 
+        <title>Presents</title>
+    </head>
+    
+    <body onload="loadPresents()">
+
+        <div class = "description">
+          <h1>Santa's Christmas Sack</h1>
+          <div class = "christmasBanner">
+            <img
+                src = "public/santa-claus.png"
+                alt = "mistletoe"
+                width = "50"
+                height = "50"
+            />
+            <h2>For You!</h2>
+            <img
+                src = "public/gift.png"
+                alt = "snow"
+                width = "35"
+                height = "35"
+            />
+          </div>
+
+        </div>
+        <div>
+            <select id = "christmasSack">
+                <option value = "Coals">Coals</option>
+                <option value = "New toy car">New toy car</option>
+                <option value = "Ballet shoes">Ballet shoes</option>
+            </select>
+            <input type = "number" id = "quantity" placeholder = "Qty"/>
+            <input type = "number" id = "value" placeholder = "Value"/>
+
+            <button onclick="addToSack()" class = "addButton">+ Add</button>
+        </div> 
+        <div class = "tableSection">
+            <table
+                id = "productList"
+                class = "product_table center"
+            >
+                <thead>
+                    <th style="width: 50%">Present Name</th>
+                    <th style="width: 15%">Quantity</th>
+                    <th style="width: 15%">Value</th>
+                    <th style="width: 20%">Total</th>
+                </thead>
+
+                <tbody id = "presentsBody">
+                    <!--Data will be displayed by fetching from 'cart.js' file-->
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right">Gross Amount</td>
+                        <td class="text-right">
+                            <span id="gross"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Vat (7%)</td>
+                        <td class="text-right">
+                            <span id="vat"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Net Amount</td>
+                        <td class="text-right">
+                            <span id="net"></span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="cart.js"></script>
+    </body>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/christmas" title="christmas icons">Christmas icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/christmas" title="christmas icons">Christmas icons created by Rue - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/holiday" title="holiday icons">Holiday icons created by Aranagraphics - Flaticon</a>        
+        <a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by Pixel perfect - Flaticon</a>
+    </footer>
+    
+</html>

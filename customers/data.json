@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Monica Geller",
+        "email": "mgeller@friends.com",
+        "phone": "0123456789"
+    },
+    {
+        "name": "Rachel Greene",
+        "email": "rgreene@friends.com",
+        "phone": "0123456789"
+    },
+    {
+        "name": "Phoebe Buffay",
+        "email": "pbuffay@friends.com",
+        "phone": "0123456789"
+    },
+    {
+        "name": "Ross Geller",
+        "email": "rgeller@friends.com",
+        "phone": "0123456789"
+    },
+    {
+        "name": "Joey Tribbiani",
+        "email": "jtribbiani@friends.com",
+        "phone": "0123456789"
+    },
+    {
+        "name": "Chandler Bing",
+        "email": "cbing@friends.com",
+        "phone": "0123456789"
+    }
+]

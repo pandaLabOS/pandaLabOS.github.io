@@ -1,0 +1,6 @@
+.centralPerkFont {
+    color: BA2C11; 
+    font-family: GABRWFFR;
+    src: url("GABRWFFR.TTF") format('TRUETYPE');
+    text-transform: uppercase;
+}
