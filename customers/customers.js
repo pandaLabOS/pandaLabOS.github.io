@@ -81,14 +81,8 @@ function loadCustomers() {
         let cellEmail = '<td class="text-right">' + customers[p].email + "</td>"
         let cellPhone = '<td class="text-right">' + customers[p].phone + "</td>"
         console.log(cellName, " ", cellEmail, " ", cellPhone)
-        let row = 
-        `<tr>
-            ${cellName}
-            ${cellEmail}
-            ${cellPhone}
-        </tr>`
+        let row = `<tr>${cellName}${cellEmail}${cellPhone}</tr>`
         allRows += row
     }
     $('#customerTable_body').html(allRows)
-
 }
